@@ -1,10 +1,12 @@
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
+import dotenv from 'dotenv';
 import { connectDB } from "./DB/Database.js";
 import transactionRoutes from "./Routers/Transactions.js";
 import userRoutes from "./Routers/userRouter.js";
 
+dotenv.config();
 //app is express server
 const app = express();
 const port = 4000;
